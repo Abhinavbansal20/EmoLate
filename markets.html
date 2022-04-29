@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markets</title>
+    <link rel="stylesheet" href="stylesheet_markets.css">
+</head>
+
+<body>
+
+    <div class="topHeader">
+        <!-- Add logo image here -->
+        <a href="homepage.html"><img src="Images/dataTree.png" alt="" class="homeButton"></a>
+
+        <p id="navText" class="capsText"> NEW!!! Vertebra chips now available!!!</p>
+
+        <div class="buttonsNav">
+            <a href="about.html"><button class="glowButton short150">ABOUT</button></a>
+            <a href=""><button class="glowButton short150">CONTACT</button></a>
+            <a href=""><button class="glowButton short150">TESTIMONIAL</button></a>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="leftText">
+            <div class="textOnly">
+                <span class="heading">Registration</span>
+                <p class="textMain">New users must fill this form and register with Emo-Late before entering into the Marketplace!</p>
+            </div>
+            <div class="regForm">
+                <form action="marketplace.html">
+                    <p><input id="firstName" type="text" placeholder="Enter First Name" class="formInput"></p>
+                    <p><input id="lastName" type="text" placeholder="Enter Last Name" class="formInput"></p>
+                    <p><input id="email" type="text" placeholder="Enter E-mail ID" class="formInput"></p>
+                    <p><input id="phone" type="text" placeholder="Enter Phone Number" class="formInput"></p>
+                    <p><select name="personality" class="formInput" id="personalityTest" aria-placeholder="Myers-Briggs Personality">
+                        <option value="" disabled selected>Myers-Briggs Personality</option>
+                        <option value="MB1">ISTJ - The Inspector</option>
+                        <option value="MB2">ISTP - The Crafter</option>
+                        <option value="MB3">ISFJ - The Protector</option>
+                        <option value="MB4">ISFP - The Artist</option>
+                        <option value="MB5">INFJ - The Advocate</option>
+                        <option value="MB6">INFP - The Mediator</option>
+                        <option value="MB7">INTJ - The Architect</option>
+                        <option value="MB8">INTP - The Thinker</option>
+                        <option value="MB9">ESTP - The Persuader</option>
+                        <option value="MB10">ESTJ - The Director</option>
+                        <option value="MB11">ESFP - The Performer</option>
+                        <option value="MB12">ESFJ - The Caregiver</option>
+                        <option value="MB13">ENFP - The Champion</option>
+                        <option value="MB14">ENFJ - The Giver</option>
+                        <option value="MB15">ENTP - The Debater</option>
+                        <option value="MB16">ENTJ - The Commander</option>
+                    </select></p>
+                    <p><button class="regButton">Register & Login</button></p>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="rightText">
+            <div class="textOnly">
+                <span class="heading">Login</span>
+                <p class="textMain">Existing users Login here!</p>
+            </div>
+            <div class="regForm">
+                <form action="marketplace.html">
+                    <p><input id="username" type="text" placeholder="Enter Username" class="formInput"></p>
+                    <p><input id="password" type="password" placeholder="Enter Password" class="formInput"></p>
+                    <p><button class="regButton">Login</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

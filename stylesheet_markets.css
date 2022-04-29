@@ -1,0 +1,298 @@
+body {
+    background: url("Images/dataTree2.jpg") no-repeat transparent;
+    background-color: black;
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: auto;
+}
+
+.topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+    justify-items: center;
+}
+
+.homeButton {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.buttonsNav {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.homeButton:hover {
+    box-shadow: 0 0 1px 1px #fff, /* inner white */
+    0 0 2px 2px rgb(226, 228, 143), /* middle magenta */
+    0 0 3px 3px rgb(240, 221, 18);
+}
+
+.capsText {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: large;
+    font-weight: 300;
+}
+
+.capsText:hover {
+    animation: glowing 20s linear infinite;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(45deg, #eeff00, #f0ff17, #eefb3a, #f4ff53, #f6ff7c, #f9ffa0, #faffb9, #fdffe3, #ffffff);
+}
+
+.mainBody {
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 60%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    column-gap: 100px;
+    margin-left: 20%;
+    margin-top: 60px;
+    box-shadow: 0 0 10px 5px #fff, /* inner white */
+    0 0 20px 10px #f0f, /* middle magenta */
+    0 0 30px 15px #0ff;
+    /* outer cyan */
+}
+
+.leftText {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: top;
+    text-align: left;
+    border-right: white;
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.rightText {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    justify-content: top;
+    text-align: left;
+    border-right: white;
+    overflow: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.heading {
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 60px;
+}
+
+.textMain {
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: none;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/* glow button code starts here  */
+
+.glowButton {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    border-color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: xx-large;
+}
+
+.glowButton:before {
+    content: '';
+    background: linear-gradient(45deg, #eeff00, #f0ff17, #eefb3a, #f4ff53, #f6ff7c, #f9ffa0, #faffb9, #fdffe3, #ffffff);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glowButton:active {
+    color: #000
+}
+
+.glowButton:active:after {
+    background: transparent;
+}
+
+.glowButton:hover:before {
+    opacity: 1;
+}
+
+.glowButton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.short150 {
+    width: 125px;
+    height: 40px;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding: 3px 12px;
+    margin: 0 0 0 0;
+    border-radius: 5px;
+    width: 250px;
+}
+
+input[type="text"]::placeholder {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: rgba(210, 255, 251, 0.17);
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #fffaeec4;
+}
+
+input:hover,
+select:hover {
+    border-color: #eefbffc4;
+}
+
+select {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    /* color:rgb(255, 255, 255); */
+    color: rgba(210, 255, 251, 0.17);
+    padding: 3px 12px;
+    margin: 0 0 0 0;
+    width: 250px;
+    border-radius: 5px;
+}
+
+select option:first-child {
+    color: rgba(210, 255, 251, 0.17);
+}
+
+select option {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+input[type="password"] {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    /* color:rgb(255, 255, 255); */
+    color: rgba(210, 255, 251, 0.17);
+    padding: 3px 12px;
+    margin: 0 0 0 0;
+    width: 250px;
+    border-radius: 5px;
+}
+
+input[type="password"]::placeholder {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    color: rgba(210, 255, 251, 0.17);
+}
+
+.regButton {
+    width: 250px;
+    background-color: transparent;
+    color: rgba(242, 255, 254, 0.78);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.28);
+    padding: 3px 12px;
+    text-align: left;
+    margin: 0 0 0 0;
+    /* text-shadow: 0 0 9px rgba(142,240,255, .76); */
+    border-radius: 5px;
+}
+
+.regButton:hover {
+    /* background-color:rgba(242,255,254,0.15);
+	transition:0.2s; */
+    border-color: #000000;
+    color: white;
+    box-shadow: 0 0 1px 1px #fff, /* inner white */
+    0 0 2px 2px rgb(226, 228, 143), /* middle magenta */
+    0 0 3px 3px rgb(240, 221, 18);
+}
+
+.regButton:active {
+    background-color: rgba(242, 255, 254, 1);
+    transition: 0.1s;
+}
+
+.regButton:focus {
+    background-color: #90dded;
+    border-color: #EA9A60;
+    color: #051C2E;
+    font-weight: 700;
+    transition: 0.2s ease;
+}

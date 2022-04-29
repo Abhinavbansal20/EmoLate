@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emo-Late</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet_installation.css">
+</head>
+
+<body>
+
+    <div class="topHeader">
+        <!-- Add logo image here -->
+        <a href="homepage.html"><img src="Images/dataTree.png" alt="" class="homeButton"></a>
+
+        <!-- <p id="navText" class="capsText"> NEW!!! Click here for Holo Mode!!!</p> -->
+
+        <div class="buttonsNav">
+            <a href="about.html"><button class="glowButton short150">ABOUT</button></a>
+            <a href=""><button class="glowButton short150">CONTACT</button></a>
+            <a href=""><button class="glowButton short150">TESTIMONIAL</button></a>
+        </div>
+    </div>
+
+    <div class="mainBody">
+        <div class="mainHeading">
+            <p class="heading">INSTALL EMOTIONS</p>
+        </div>
+        <div class="existing-bar">
+            <span class="allSubs ">Existing Neural Damage</span>
+            <br>
+            <span class="allSubs ">Used Today:</span><span id="used" class="allSubs glow"></span>
+            <br>
+            <span class="labels left">0%</span>
+            <br>
+            <div class="range-container">
+                <div id="bar-value" class="existing-neural bar14">14</div>
+            </div>
+            <span class="labels right">100%</span>
+        </div>
+        <br>
+        <br>
+        <hr class="hrEmotion" width="1000px">
+
+
+        <!-- left information -->
+        <div class="mainInfo">
+            <div class="leftInfo">
+                <span class="allSubanswer">Abhinav Bansal</span>
+                <div class="imageLeft">
+                    <img src="Images/dataTree2.jpg" alt="Profile Picture" class="imageLeft">
+                </div>
+                <br>
+                <span class="allSubs">Personality Type:</span>
+                <span class="allSubanswer">ISFJ - The Protector</span>
+                <div class="personality-box-left">
+                    <p class="all-subs-small"><b> DO NOT USE EMO-LATE IMMEDIATELY AFTER THE NEURAL BAR REACHES 80%.</b> Wait for some time for Neurons to regenerate.</p>
+                    <p class="all-subs-small">Maximum 2% Neural Damage can be done in a day.</p>
+                </div>
+            </div>
+            <!-- jribh slider -->
+            <!-- <div class="ranges">
+                <div class="slider-container">
+                    <span class="bar"><span class="fill"></span></span>
+                    <input id="slider" class="slider" type="range" min="0" max="50" value="10" id="strength" name="strength">
+                </div>
+            </div> -->
+
+            <!-- middle information -->
+            <div class="middleInfo">
+                <div class="selectInfo">
+                    <select id="personalitySelect" name="myEmotions" class="formInput" id="myEmotions" aria-placeholder="My Emotions">
+                        <option value="" disabled selected>My Emotions</option>
+                        <option id="anger1" value="1">Anger</option>
+                        <option id="sympathy1" value="2">Sympathy</option>
+                        <option id="calmness1" value="3">Calmness</option>
+                    </select>
+                    <select name="device" class="formInput" id="device" aria-placeholder="Select Device">
+                        <option value="" disabled selected>Select Device</option>
+                        <option value="1">Wrist Band</option>
+                        <option value="2">Back Strap</option>
+                        <option value="3">Neck Band</option>
+                    </select>
+                </div>
+
+                <button id="install" class="glowButton long500">INSTALL</button>
+
+                <hr class="dotted">
+
+                <div class="installing">
+                    <p id="inst" class="glow heading3"></p>
+                </div>
+                <!-- progress bar -->
+                <!-- <div class="empty">
+                    <div id="hidden" class="progress-container">
+                        <div class="progress progress-striped">
+                            <div class="progress-bar">
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <hr class="dotted">
+                <div class="textInfo">
+                    <span id="time-span" class="allSubs"></span>
+                    <br>
+                    <span id="effect-span" class="allSubs"></span>
+
+                </div>
+
+            </div>
+            <div class="rightInfo">
+                <span class="allSubanswer">Installed Emotions</span>
+                <div class="personality-box">
+                    <span class="all-subs-small">Personality: ISFJ - The Protector</span>
+                    <br>
+                    <span class="all-subs-small">Emotion: <span class="all-subs-small caps">SYMPATHY</span></span>
+                    <br>
+                    <span class="all-subs-small">Attempts Left: <span id="sympathyTries" class="all-subs-small caps">20</span></span>
+                    <br>
+                    <span class="all-subs-small">Neural Damage per Attempt: <span id="val-sympathy" class="all-subs-small caps">0.02<span class="all-subs-small caps">%</span></span>
+                    </span>
+                </div>
+                <div class="personality-box">
+                    <span class="all-subs-small">Personality: ISFJ - The Protector</span>
+                    <br>
+                    <span class="all-subs-small">Emotion: <span class="all-subs-small caps">ANGER</span></span>
+                    <br>
+                    <span class="all-subs-small">Attempts Left: <span id="angerTries" class="all-subs-small caps">10</span></span>
+                    <br>
+                    <span class="all-subs-small">Neural Damage per Attempt: <span id="val-anger" class="all-subs-small caps">0.07<span class="all-subs-small caps">%</span></span>
+                </div>
+                <div class="personality-box">
+                    <span class="all-subs-small">Personality: ISFJ - The Protector</span>
+                    <br>
+                    <span class="all-subs-small">Emotion: <span class="all-subs-small caps">CALMNESS</span></span>
+                    <br>
+                    <span class="all-subs-small">Attempts Left: <span id="calmnessTries" class="all-subs-small caps">340</span></span>
+                    <br>
+                    <span class="all-subs-small">Neural Damage per Attempt: <span id="val-calmness" class="all-subs-small caps">0.1<span class="all-subs-small caps">% </span></span>
+                    </span>
+                </div>
+
+
+                <br><br>
+
+                <!-- <span class="allSubs">Projected Neural Damage:</span>
+                <input type="range" name="" id="">
+                <div class="slide-range">
+                    <span class="bar"><span class="fill"></span></span>
+                    <input id="slider" class="slider" type="range" min="0" max="100" value="17" id="existing" name="existing">
+                </div> -->
+
+                <!-- progress gif -->
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <div class="ranges">
+        <div class="slider-container">
+            <span class="bar"><span class="fill"></span></span>
+            <input id="slider" class="slider" type="range" min="0" max="50" value="10" id="strength" name="strength">
+        </div>
+        <div class="slider-container">
+            <span class="bar2"><span class="fill2"></span></span>
+            <input id="slider2" class="slider2" type="range" min="0" max="50" value="10" id="intelligence" name="intelligence">
+        </div>
+        <div class="slider-container">
+            <span class="bar3"><span class="fill3"></span></span>
+            <input id="slider3" class="slider3" type="range" min="0" max="50" value="10" id="emotion" name="emotion">
+        </div>
+        <div class="slider-container">
+            <span class="bar4"><span class="fill4"></span></span>
+            <input id="slider4" class="slider4" type="range" min="0" max="50" value="10" id="immunity" name="immunity">
+        </div>
+        <div class="slider-container">
+            <span class="bar5"><span class="fill5"></span></span>
+            <input id="slider5" class="slider5" type="range" min="0" max="50" value="10" id="confidence" name="confidence">
+        </div>
+    </div> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="installation_js.js"></script>
+</body>
+
+</html>

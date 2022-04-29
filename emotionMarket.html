@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheet_emotionMarket.css">
+</head>
+
+<body>
+
+    <div class="topHeader">
+        <!-- Add logo image here -->
+        <a href="homepage.html"><img src="Images/dataTree.png" alt="" class="homeButton"></a>
+
+        <!-- <p id="navText" class="capsText"> NEW!!! Click here for Holo Mode!!!</p> -->
+
+        <div class="buttonsNav">
+            <a href="marketplace.html"><button class="glowButton long300">MARKETS HOMEPAGE</button></a>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="personalitySelect">
+            <select name="personality" class="formInput" id="personalityTest" aria-placeholder="Myers-Briggs Personality">
+                <option value="" disabled selected>Personality</option>
+                <option value="MB1">ISTJ - The Inspector</option>
+                <option value="MB2">ISTP - The Crafter</option>
+                <option value="MB3">ISFJ - The Protector</option>
+                <option value="MB4">ISFP - The Artist</option>
+                <option value="MB5">INFJ - The Advocate</option>
+                <option value="MB6">INFP - The Mediator</option>
+                <option value="MB7">INTJ - The Architect</option>
+                <option value="MB8">INTP - The Thinker</option>
+                <option value="MB9">ESTP - The Persuader</option>
+                <option value="MB10">ESTJ - The Director</option>
+                <option value="MB11">ESFP - The Performer</option>
+                <option value="MB12">ESFJ - The Caregiver</option>
+                <option value="MB13">ENFP - The Champion</option>
+                <option value="MB14">ENFJ - The Giver</option>
+                <option value="MB15">ENTP - The Debater</option>
+                <option value="MB16">ENTJ - The Commander</option>
+            </select>
+        </div>
+        <div class="priceFilter">
+            <select name="price" class="formInput" id="priceFilter" aria-placeholder="Prices">
+                <option value="" disabled selected>Select Price</option>
+                <option value="price">Under Rs. 10,0000</option>
+                <option value="price2">Rs.10,000 - Rs.99,999</option>
+                <option value="price3">Rs. 100,000 - Rs. 999,999</option>
+                <option value="price4">Rs. 10,00,000 Above</option>
+                <option value="price5">All Prices</option>
+            </select>
+        </div>
+        <button class="glowButton type2">SEARCH</button>
+    </div>
+    <div class="container">
+        <div class="card-carousel">
+            <div class="card" id="1">
+                <div class="personalityHeading">
+                    <p>ISFJ- The Protector</p>
+                    <p>(25 Times Only)</p>
+                    <p class="smallHeading">Time Taken: 1 Minute</p>
+
+                </div>
+                <br>
+                <div class="image-container"></div>
+                <p class="personalityHeading">CALMNESS</p>
+                <p class="innerText">Suited to curb anxiety immediately. Use during exams, sleep, trip-nights, important dates.</p>
+                <br>
+                <button id="buy-button-1" class="glowButton short150">Buy Now</button>
+            </div>
+            <div class="card" id="2">
+                <div class="personalityHeading">
+                    <p>ISFJ- The Protector</p>
+                    <p>(7 Times Only)</p>
+                    <p class="smallHeading">Time Taken: 24 Hours</p>
+                </div>
+                <br>
+                <div class="image-container"></div>
+                <p class="personalityHeading">ANGER</p>
+                <p class="innerText">Best suitable for soft-spoken people to become firm with their decisions, suited for acting.</p>
+                <br>
+                <button id="buy-button-2" class="glowButton short150">Buy Now</button>
+            </div>
+            <div class="card" id="3">
+                <div class="personalityHeading">
+                    <p>ISFJ- The Protector</p>
+                    <p>(3 Times Only)</p>
+                    <p class="smallHeading">Time Taken: 12 Hours</p>
+                </div>
+                <br>
+                <div class="image-container"></div>
+                <p class="personalityHeading">CONFIDENCE</p>
+                <p class="innerText">Best suitable for answering exams, going to business meetings and during public speaking events.</p>
+                <br>
+                <button id="buy-button-3" class="glowButton short150">Buy Now</button>
+            </div>
+            <div class="card" id="4">
+                <div class="personalityHeading">
+                    <p>ISFJ- The Protector</p>
+                    <p>(10 Times Only)</p>
+                    <p class="smallHeading">Time Taken: 8 Hours</p>
+                </div>
+                <br>
+                <div class="image-container"></div>
+                <p class="personalityHeading">EMPATHY</p>
+                <p class="innerText">Best suitable for juries, trips, funerals and public functions.</p>
+                <br>
+                <button id="buy-button-4" class="glowButton short150">Buy Now</button>
+            </div>
+            <div class="card" id="5">
+                <div class="personalityHeading">
+                    <p>ISFJ- The Protector</p>
+                    <p>(7 Times Only)</p>
+                    <p class="smallHeading">Time Taken: 12 Hours</p>
+                </div>
+                <br>
+                <div class="image-container"></div>
+                <p class="personalityHeading">COMPASSION</p>
+                <p class="innerText">Best suitable for dating, child-raising, workplaces.</p>
+                <br>
+                <button id="buy-button-5" class="glowButton short150">Buy Now</button>
+            </div>
+        </div>
+
+        <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+    </div>
+
+    <script src="app_EmotionMarket.js"></script>
+</body>
+
+</html>
